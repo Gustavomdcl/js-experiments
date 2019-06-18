@@ -1,108 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-<head>
-	<meta charset="utf-8">
-	<meta name="robots" content="NOINDEX, nofollow" />
-	<title>Pure</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="author" content="Agência Webnauta">
-	<meta name="HandheldFriendly" content="True">
-	<meta name="MobileOptimized" content="320">
-	<meta http-equiv="cleartype" content="on">
-</head>
-<body>
-	
-	<script type="text/javascript">
-		//FOR array + object
-			if(false){
-				var MyText = {
-					one: '1',
-					two: '2',
-					three: '3'
-				};
-				for(var key in MyText) {
-					console.log(key);
-					console.log(MyText[key]);
-				}
-				var MyNumber = ['one','two','three'];
-				for(var key in MyNumber) {
-					console.log(key);
-					console.log(MyNumber[key]);
-				}
-			}
-		//Array splice, split, join, reverse
-			if(false){
-				var frutas = [
-					'maçã',
-					'pêssego',
-					'laranja',
-					'limão',
-					'lima',
-					'cereja'
-				];
-				// var removidas = frutas.splice(2,1,'oi','boom','nene');
-				var removidas = frutas.slice(2,4);
-				console.log(frutas);
-				console.log(removidas);
-			}
-		//Functions
-			if(false){
-				function teste(dog){
-					if(dog==undefined){
-						alert('Nope');
-					} else {
-						alert(dog);
-					}
-				}
-				teste();
-				teste('oi');
-			}
-			if(false){
-				function teste(dog=['sapinho','coisinha']){
-					if(dog==undefined){
-						alert('Nope');
-					} else {
-						alert(dog);
-					}
-				}
-				teste();
-				teste('oi');
-			}
-			if(false){
-				function container(type='casual',template=function(){}){
-					if(type=='casual'){
-						alert(type);
-					} else {
-						alert(type);
-						template();
-					}
-				}
-				container();
-				container('admin',function(){
-					alert('blob');
-				});
-			}
-			if(false){
-				function outerFunc(base){
-					var punc = "!";
-					return function(ext){
-						return base+ext+punc;
-					}
-				}
-				var baseString = outerFunc("Hello ");
-				var newString = baseString("World");
-				alert(newString);
-			}
-			if(false){
-				function checkColor(element){
-					return element;
-				}
-				var colors = new Array();
-				colors[0] = ['oi','sapo','dog'];
-				//for(var key in colors){
-					alert(colors[0].filter(checkColor));
-				//}
-			}
-	</script>
-</body></html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="NOINDEX, nofollow" />
+    <title>Pure</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="author" content="Agência Webnauta" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta http-equiv="cleartype" content="on" />
+  </head>
+  <body>
+    <script type="text/javascript">
+      //FOR array + object
+      if (false) {
+        var MyText = {
+          one: "1",
+          two: "2",
+          three: "3"
+        };
+        for (var key in MyText) {
+          console.log(key);
+          console.log(MyText[key]);
+        }
+        var MyNumber = ["one", "two", "three"];
+        for (var key in MyNumber) {
+          console.log(key);
+          console.log(MyNumber[key]);
+        }
+      }
+      //Array splice, split, join, reverse
+      if (false) {
+        var frutas = ["maçã", "pêssego", "laranja", "limão", "lima", "cereja"];
+        // var removidas = frutas.splice(2,1,'oi','boom','nene');
+        var removidas = frutas.slice(2, 4);
+        console.log(frutas);
+        console.log(removidas);
+      }
+      //Functions
+      if (false) {
+        function teste(dog) {
+          if (dog == undefined) {
+            alert("Nope");
+          } else {
+            alert(dog);
+          }
+        }
+        teste();
+        teste("oi");
+      }
+      if (false) {
+        function teste(dog = ["sapinho", "coisinha"]) {
+          if (dog == undefined) {
+            alert("Nope");
+          } else {
+            alert(dog);
+          }
+        }
+        teste();
+        teste("oi");
+      }
+      if (false) {
+        function container(type = "casual", template = function() {}) {
+          if (type == "casual") {
+            alert(type);
+          } else {
+            alert(type);
+            template();
+          }
+        }
+        container();
+        container("admin", function() {
+          alert("blob");
+        });
+      }
+      if (false) {
+        function outerFunc(base) {
+          var punc = "!";
+          return function(ext) {
+            return base + ext + punc;
+          };
+        }
+        var baseString = outerFunc("Hello ");
+        var newString = baseString("World");
+        alert(newString);
+      }
+      if (false) {
+        function checkColor(element) {
+          return element;
+        }
+        var colors = new Array();
+        colors[0] = ["oi", "sapo", "dog"];
+        //for(var key in colors){
+        alert(colors[0].filter(checkColor));
+        //}
+      }
+      //switch
+      if (false) {
+        var sapo = "M";
+        function sapoide(seps) {
+          switch (seps) {
+            case "M":
+              return "Menino";
+            case "F":
+              return "Menina";
+            default:
+              return "Limpo";
+          }
+        }
+        alert(sapoide(sapo));
+      }
+      //class
+      if (true) {
+        class blob {
+          henrique() {
+            return "blobo";
+          }
+          isabella(bumbum) {
+            return bumbum + " lucas";
+          }
+        }
+        var gustavo = new blob();
+        alert(gustavo.isabella("gordinho"));
+        alert(gustavo.henrique("gordinho"));
+      }
+    </script>
+  </body>
+</html>
