@@ -15,7 +15,7 @@
     <meta http-equiv="cleartype" content="on" />
   </head>
   <body>
-    <input type="text" name="nome" id="nome" />
+    <input type="text" name="nome" id="nome" class="nome" />
     <script type="text/javascript">
       //FOR array + object
       if (false) {
@@ -116,7 +116,7 @@
         alert(sapoide(sapo));
       }
       //class
-      if (true) {
+      if (false) {
         class blob {
           henrique() {
             return "blobo";
@@ -130,10 +130,15 @@
         alert(gustavo.henrique("gordinho"));
       }
       //get elements
-      var inputElement = document.getElementById("nome"); //individual
-      inputElement = document.getElementsByTagName("input"); //todos os inputs
-      inputElement = document.getElementsByClassName("nome"); //todos os .nome
-      inputElement = document.querySelector("body input#nome.nome[type=text]");
+      if (true) {
+        var inputElement = document.getElementById("nome"); //individual
+        inputElement = document.getElementsByTagName("input"); //todos os inputs
+        inputElement = document.getElementsByClassName("nome"); //todos os .nome
+        inputElement = document.querySelector("body input#nome[type=text]");
+        inputElement.onclick = function() {
+          alert("yo");
+        };
+      }
     </script>
   </body>
 </html>
