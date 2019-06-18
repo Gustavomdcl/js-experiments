@@ -148,6 +148,10 @@
 
         var containerElement = document.querySelector("body");
         containerElement.appendChild(linkElement);
+
+        setTimeout(function() {
+          containerElement.removeChild(linkElement);
+        }, 1000);
       }
     </script>
   </body>
