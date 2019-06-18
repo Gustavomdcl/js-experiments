@@ -69,7 +69,7 @@
 				teste();
 				teste('oi');
 			}
-			if(true){
+			if(false){
 				function container(type='casual',template=function(){}){
 					if(type=='casual'){
 						alert(type);
@@ -82,6 +82,27 @@
 				container('admin',function(){
 					alert('blob');
 				});
+			}
+			if(false){
+				function outerFunc(base){
+					var punc = "!";
+					return function(ext){
+						return base+ext+punc;
+					}
+				}
+				var baseString = outerFunc("Hello ");
+				var newString = baseString("World");
+				alert(newString);
+			}
+			if(false){
+				function checkColor(element){
+					return element;
+				}
+				var colors = new Array();
+				colors[0] = ['oi','sapo','dog'];
+				//for(var key in colors){
+					alert(colors[0].filter(checkColor));
+				//}
 			}
 	</script>
 </body></html>
