@@ -130,7 +130,7 @@
         alert(gustavo.henrique("gordinho"));
       }
       //get elements
-      if (true) {
+      if (false) {
         var inputElement = document.getElementById("nome"); //individual
         inputElement = document.getElementsByTagName("input"); //todos os inputs
         inputElement = document.getElementsByClassName("nome"); //todos os .nome
@@ -138,6 +138,16 @@
         inputElement.onclick = function() {
           alert("yo");
         };
+      }
+      //create elements
+      if (true) {
+        var linkElement = document.createElement("a");
+        linkElement.setAttribute("href", "http://google.com");
+        var textElement = document.createTextNode("Site do Google");
+        linkElement.appendChild(textElement);
+
+        var containerElement = document.querySelector("body");
+        containerElement.appendChild(linkElement);
       }
     </script>
   </body>
