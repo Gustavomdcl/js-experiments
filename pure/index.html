@@ -149,6 +149,11 @@
         var containerElement = document.querySelector("body");
         containerElement.appendChild(linkElement);
 
+        linkElement.style.display = "block";
+        linkElement.style.width = "50%";
+        linkElement.style.height = "50px";
+        linkElement.style.backgroundColor = "#666";
+
         setTimeout(function() {
           containerElement.removeChild(linkElement);
         }, 1000);
