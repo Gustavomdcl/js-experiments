@@ -14,19 +14,33 @@
 <body>
 	
 	<script type="text/javascript">
-		var MyText = {
-			one: '1',
-			two: '2',
-			three: '3'
-		};
-		for(var key in MyText) {
-			console.log(key);
-			console.log(MyText[key]);
-		}
-		var MyNumber = ['one','two','three'];
-		for(var key in MyNumber) {
-			console.log(key);
-			console.log(MyNumber[key]);
-		}
+		//FOR array + object
+			var MyText = {
+				one: '1',
+				two: '2',
+				three: '3'
+			};
+			for(var key in MyText) {
+				console.log(key);
+				console.log(MyText[key]);
+			}
+			var MyNumber = ['one','two','three'];
+			for(var key in MyNumber) {
+				console.log(key);
+				console.log(MyNumber[key]);
+			}
+		//Array splice, split, join, reverse
+			var frutas = [
+				'maçã',
+				'pêssego',
+				'laranja',
+				'limão',
+				'lima',
+				'cereja'
+			];
+			// var removidas = frutas.splice(2,1,'oi','boom','nene');
+			var removidas = frutas.slice(2,4);
+			console.log(frutas);
+			console.log(removidas);
 	</script>
 </body></html>
