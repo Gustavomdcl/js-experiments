@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="NOINDEX, nofollow" />
+    <title>Todo App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="author" content="Agência Webnauta" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta http-equiv="cleartype" content="on" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="todo">
+        <div class="list">
+          <ul></ul>
+        </div>
+        <div class="list">
+          <ul></ul>
+        </div>
+        <div class="list">
+          <ul></ul>
+        </div>
+        <div class="form">
+          <input type="text" class="item" name="nome" placeholder="Novo Todo" />
+          <button class="add">Adicionar</button>
+        </div>
+      </div>
+      <div class="todo">
+        <div class="list">
+          <ul></ul>
+        </div>
+        <div class="list">
+          <ul></ul>
+        </div>
+        <div class="list">
+          <ul></ul>
+        </div>
+        <div class="form">
+          <input type="text" class="item" name="nome" placeholder="Novo Todo" />
+          <button class="add">Adicionar</button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var todo, list, item, add;
+      var todoList = [];
+      renderTodo();
+      function renderTodo() {
+        todo = document.querySelectorAll(".todo");
+        for (var i in todo) {
+          todoList[i] = [];
+          list = todo.item(i).querySelectorAll(".list");
+          for (var j in list) {
+          }
+          item = todo.item(i).querySelector(".item");
+          add = todo.item(i).querySelector(".add");
+          add.onclick = function() {
+            var newText = item.value;
+            item.value = "";
+            todoList[i].push(newText);
+            console.log(todoList[i]);
+          };
+        }
+        // great = list.querySelector('ul');
+        // for (var key in todoList) {
+        //   var li = document.createElement("li");
+        //   var text = document.createTextNode(todoList[key] + " ");
+        //   var link = document.createElement("li");
+        // }
+      }
+    </script>
+  </body>
+</html>

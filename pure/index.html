@@ -33,8 +33,14 @@
           console.log(key);
           console.log(MyNumber[key]);
         }
+        console.log("of");
+        for (value of MyNumber) {
+          console.log(value);
+          console.log(MyNumber.indexOf(value));
+        }
       }
       //Array splice, split, join, reverse
+      //push - add final, unshift - add inicio, pop - remove final, shift - remove inicio
       if (false) {
         var frutas = ["maçã", "pêssego", "laranja", "limão", "lima", "cereja"];
         // var removidas = frutas.splice(2,1,'oi','boom','nene');
@@ -77,6 +83,15 @@
         container();
         container("admin", function() {
           alert("blob");
+        });
+      }
+      if (false) {
+        function container(type = "casual", template = function() {}) {
+          var interninho = "bob gordinho";
+          template(interninho);
+        }
+        container("admin", function(arg1) {
+          alert(arg1 + " blob");
         });
       }
       if (false) {
@@ -140,7 +155,7 @@
         };
       }
       //create elements
-      if (true) {
+      if (false) {
         var linkElement = document.createElement("a");
         linkElement.setAttribute("href", "http://google.com");
         var textElement = document.createTextNode("Site do Google");
