@@ -173,6 +173,16 @@
           containerElement.removeChild(linkElement);
         }, 1000);
       }
+      //save storage
+      if (false) {
+        objeto = {
+          sapo: "oi",
+          gordinho: "olá"
+        };
+        localStorage.setItem("nome_unico", JSON.stringify(objeto));
+        bonitex = JSON.parse(localStorage.getItem("nome_unico")) || []; //se ele não identificar um valor adequado, se pegar undefined, da outro valor. ||
+        console.log(bonitex);
+      }
     </script>
   </body>
 </html>
