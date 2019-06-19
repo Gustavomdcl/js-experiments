@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="NOINDEX, nofollow" />
+    <title>Todo App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="author" content="Agência Webnauta" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta http-equiv="cleartype" content="on" />
+  </head>
+  <body>
+    <script type="text/javascript">
+      var minhaPromise = function() {
+        return new Promise(function(resolve, reject) {
+          var xhr = new XMLHttpRequest();
+          xhr.open("GET", "https://api.github.com/users/gustavomdcl");
+          xhr.send(null);
+
+          xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+              if (xhr.status === 200) {
+                resolve(JSON.parse(xhr.responseText));
+              } else {
+                reject("Erro na requisição");
+              }
+            }
+          };
+        });
+      };
+
+      minhaPromise()
+        .then(function(response) {
+          console.log(response);
+        })
+        .catch(function(error) {
+          console.warn(error);
+        });
+    </script>
+  </body>
+</html>
