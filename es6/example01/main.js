@@ -1,3 +1,15 @@
+/* === WEBPACK === */
+import { sombra as somaFunction, sub } from "./funcoes";
+import * as funcoes from "./sapinho";
+import somarFunction from "./soma";
+import memei, { totolis } from "./functions";
+console.log(somaFunction(1, 2));
+console.log(sub(4, 2));
+console.log(somarFunction(1, 2));
+console.log(memei(1000, 2));
+console.log(totolis(1000, 2));
+console.log(funcoes);
+console.log(funcoes.sombra(1, 6));
 /* === CLASS === */
 if (false) {
   if (false) {
@@ -237,7 +249,7 @@ if (false) {
   console.log(`Meu nome é ${nome} e tenho ${idade} anos.`);
 }
 /* === OBJECT SHORT SYNTAX === */
-if (true) {
+if (false) {
   const nome = "Diego";
   const idade = 23;
   const usuario1 = {

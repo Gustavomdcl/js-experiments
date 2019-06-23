@@ -1,409 +1,149 @@
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./main.js");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./funcoes.js":
+/*!********************!*\
+  !*** ./funcoes.js ***!
+  \********************/
+/*! exports provided: sombra, sub, mult */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
 "use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sombra\", function() { return sombra; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sub\", function() { return sub; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"mult\", function() { return mult; });\nfunction sombra(a, b) {\n  return a + b;\n}\nfunction sub(a, b) {\n  return a - b;\n}\nfunction mult(a, b) {\n  return a * b;\n}\n\n//# sourceURL=webpack:///./funcoes.js?");
 
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+/***/ }),
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+/***/ "./functions.js":
+/*!**********************!*\
+  !*** ./functions.js ***!
+  \**********************/
+/*! exports provided: default, totolis */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return memei; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"totolis\", function() { return totolis; });\nfunction memei(a, b) {\n  return a + b;\n}\nfunction totolis(a, b) {\n  return a - b;\n}\n\n//# sourceURL=webpack:///./functions.js?");
 
-function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+/***/ }),
 
-function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+/***/ "./main.js":
+/*!*****************!*\
+  !*** ./main.js ***!
+  \*****************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _funcoes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./funcoes */ \"./funcoes.js\");\n/* harmony import */ var _sapinho__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sapinho */ \"./sapinho.js\");\n/* harmony import */ var _soma__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./soma */ \"./soma.js\");\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./functions */ \"./functions.js\");\nfunction _typeof(obj) { if (typeof Symbol === \"function\" && typeof Symbol.iterator === \"symbol\") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === \"function\" && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }; } return _typeof(obj); }\n\nfunction _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }\n\nfunction _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }\n\nfunction _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }\n\nfunction _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }\n\nfunction _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === \"object\" || typeof call === \"function\")) { return call; } return _assertThisInitialized(self); }\n\nfunction _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError(\"this hasn't been initialised - super() hasn't been called\"); } return self; }\n\nfunction _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }\n\nfunction _inherits(subClass, superClass) { if (typeof superClass !== \"function\" && superClass !== null) { throw new TypeError(\"Super expression must either be null or a function\"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }\n\nfunction _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }\n\nfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\"Cannot call a class as a function\"); } }\n\nfunction _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\"value\" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }\n\nfunction _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }\n\n/* === WEBPACK === */\n\n\n\n\nconsole.log(Object(_funcoes__WEBPACK_IMPORTED_MODULE_0__[\"sombra\"])(1, 2));\nconsole.log(Object(_funcoes__WEBPACK_IMPORTED_MODULE_0__[\"sub\"])(4, 2));\nconsole.log(Object(_soma__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(1, 2));\nconsole.log(Object(_functions__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(1000, 2));\nconsole.log(Object(_functions__WEBPACK_IMPORTED_MODULE_3__[\"totolis\"])(1000, 2));\nconsole.log(_sapinho__WEBPACK_IMPORTED_MODULE_1__);\nconsole.log(_sapinho__WEBPACK_IMPORTED_MODULE_1__[\"sombra\"](1, 6));\n/* === CLASS === */\n\nif (false) { var Matematica, _TodoList, MinhaLista, TodoList, List; }\n/* === CONSTANTES === */\n\n\nif (false) { var usuario, a; }\n/* === ESCOPO === */\n\n\nif (false) { var _i, i, teste; }\n/* === OPERAÇÕES EM ARRAY(VETOR) === */\n\n\nif (false) { var find, filter, sum, newArr, arr; }\n/* === ARROW FUNCTION === */\n\n\nif (false) { var teste04, teste03, teste02, newArr2, _newArr, _arr, teste01; }\n/* === VALORES PADRÃO === */\n\n\nif (false) { var soma02, soma01; }\n/* === DESESTRUTURAÇÃO DE OBJETOS === */\n\n\nif (false) { var _nome, _idade, _cidade, cidade, idade, nome, _usuario, mostraIdade, mostraNome; }\n/* === REST/SPREAD === */\n\n\nif (false) { var usuario2, usuario1, arr3, arr2, arr1, soma03, _soma2, _soma, _a, b, c, _arr2, _nome2, resto, _usuario2; }\n/* === TEMPLATE LITERALS === */\n\n\nif (false) { var _idade2, _nome3; }\n/* === OBJECT SHORT SYNTAX === */\n\n\nif (false) { var _usuario4, _usuario3, _idade3, _nome4; }\n\n//# sourceURL=webpack:///./main.js?");
 
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+/***/ }),
 
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+/***/ "./sapinho.js":
+/*!********************!*\
+  !*** ./sapinho.js ***!
+  \********************/
+/*! exports provided: sombra, sub, mult */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sombra\", function() { return sombra; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sub\", function() { return sub; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"mult\", function() { return mult; });\nfunction sombra(a, b) {\n  return a + b;\n}\nfunction sub(a, b) {\n  return a - b;\n}\nfunction mult(a, b) {\n  return a * b;\n}\n\n//# sourceURL=webpack:///./sapinho.js?");
 
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+/***/ }),
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+/***/ "./soma.js":
+/*!*****************!*\
+  !*** ./soma.js ***!
+  \*****************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return somar; });\nfunction somar(a, b) {\n  return a + b;\n} //uso o default para na hora de importar chamar a função do jeito que eu quiser\n\n//# sourceURL=webpack:///./soma.js?");
 
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+/***/ })
 
-/* === CLASS === */
-if (false) {
-  if (false) {
-    var List =
-    /*#__PURE__*/
-    function () {
-      function List() {
-        _classCallCheck(this, List);
-
-        this.data = [];
-      }
-
-      _createClass(List, [{
-        key: "add",
-        value: function add(data) {
-          this.data.push(data);
-          console.log(this.data);
-        }
-      }]);
-
-      return List;
-    }();
-
-    var TodoList =
-    /*#__PURE__*/
-    function (_List) {
-      _inherits(TodoList, _List);
-
-      function TodoList() {
-        var _this;
-
-        _classCallCheck(this, TodoList);
-
-        _this = _possibleConstructorReturn(this, _getPrototypeOf(TodoList).call(this)); //Chama o constructor da class pai, que é List (TodoList extends List)
-
-        _this.usuario = "Diego";
-        return _this;
-      }
-
-      _createClass(TodoList, [{
-        key: "mostraUsuario",
-        value: function mostraUsuario() {
-          console.log(this.usuario);
-        }
-      }]);
-
-      return TodoList;
-    }(List);
-
-    var MinhaLista = new TodoList();
-
-    document.getElementById("novotodo").onclick = function () {
-      MinhaLista.add("Novo todo");
-    };
-
-    MinhaLista.mostraUsuario();
-  }
-
-  if (false) {
-    var _TodoList =
-    /*#__PURE__*/
-    function () {
-      function _TodoList() {
-        _classCallCheck(this, _TodoList);
-
-        this.todos = [];
-      }
-
-      _createClass(_TodoList, null, [{
-        key: "addTodo",
-        value: function addTodo() {
-          //static serve para passar uma info e retornar outra idependentemente do restante da classe.
-          //geralmente nem tem constructor quando tem classe static
-          this.todos.push("Novo todo"); //métodos static não vão enxergar o this.todos
-
-          console.log(this.todos);
-        }
-      }]);
-
-      return _TodoList;
-    }(); //TodoList.addTodo();//VAI DAR ERRO POIS STATIC NÃO TEM THIS
-
-
-    var Matematica =
-    /*#__PURE__*/
-    function () {
-      function Matematica() {
-        _classCallCheck(this, Matematica);
-      }
-
-      _createClass(Matematica, null, [{
-        key: "soma",
-        value: function soma(a, b) {
-          return a + b;
-        }
-      }]);
-
-      return Matematica;
-    }();
-
-    console.log(Matematica.soma(1, 2));
-  }
-}
-/* === CONSTANTES === */
-
-
-if (false) {
-  var a = 1; //valor não pode reatribuir, mas pode mutar
-  //a = 3;//vai dar erro, pois não pode reatribuir
-
-  var usuario = {
-    nome: "Diego"
-  };
-  usuario.nome = "Cleiton"; //isso é mutar, e pode
-
-  console.log(usuario);
-}
-/* === ESCOPO === */
-
-
-if (false) {
-  var teste = function teste(x) {
-    //variável dentro de uma função
-    var y = 2;
-
-    if (x > 5) {
-      var _y = 4; //pode refazer isso aqui dentro novamente
-
-      console.log(x, _y);
-    }
-  };
-
-  teste(10); //OU
-
-  var i = 5;
-
-  for (var _i = 0; _i < 10; _i++) {
-    // some statements
-    console.log("dentro: ", _i);
-  } // Here i is 5
-
-
-  console.log("fora: ", i);
-}
-/* === OPERAÇÕES EM ARRAY(VETOR) === */
-
-
-if (false) {
-  var arr = [1, 3, 4, 5, 8, 9];
-  var newArr = arr.map(function (item, index) {
-    return item + index;
-  });
-  console.log(newArr);
-  var sum = arr.reduce(function (total, next) {
-    return total + next;
-  });
-  console.log(sum);
-  var filter = arr.filter(function (item) {
-    //sempre tem que retornar true or false aqui dentro;
-    return item % 2 === 0; //divisiveis por 2, pares
-  });
-  console.log(filter);
-  var find = arr.find(function (item) {
-    return item === 4;
-  });
-  console.log(find);
-}
-/* === ARROW FUNCTION === */
-
-
-if (false) {
-  var teste01 = function teste01() {
-    return "teste";
-  };
-
-  var _arr = [1, 3, 4, 5, 6];
-
-  var _newArr = _arr.map(function (item) {
-    return item * 2;
-  });
-
-  console.log(_newArr); //OU (bem reduzido heim)
-
-  var newArr2 = _arr.map(function (item) {
-    return item * 2;
-  });
-
-  console.log(newArr2);
-  console.log(teste01()); //OU
-
-  var teste02 = function teste02() {
-    return "teste";
-  }; //mas não é recomendado
-
-
-  console.log(teste02()); //OU
-
-  var teste03 = function teste03() {
-    return "teste";
-  };
-
-  console.log(teste03()); //PARA OBJETOS:
-
-  var teste04 = function teste04() {
-    return {
-      nome: "Diego"
-    };
-  };
-
-  console.log(teste04());
-}
-/* === VALORES PADRÃO === */
-
-
-if (false) {
-  var soma01 = function soma01() {
-    var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
-    var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
-    return a + b;
-  };
-
-  console.log(soma01(1));
-  console.log(soma01()); //OU
-
-  var soma02 = function soma02() {
-    var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
-    var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
-    return a + b;
-  };
-
-  console.log(soma02(1));
-  console.log(soma02());
-}
-/* === DESESTRUTURAÇÃO DE OBJETOS === */
-
-
-if (false) {
-  var mostraNome = function mostraNome(usuario) {
-    console.log(usuario.nome);
-  };
-
-  //OU
-  var mostraIdade = function mostraIdade(_ref) {
-    var idade = _ref.idade;
-    console.log(idade);
-  };
-
-  var _usuario = {
-    nome: "Diego",
-    idade: 23,
-    endereco: {
-      cidade: "Rio do Sul",
-      estado: "SC"
-    }
-  };
-
-  if (false) {
-    var nome = _usuario.nome;
-    var idade = _usuario.idade;
-    var cidade = _usuario.endereco.cidade;
-    console.log(nome);
-    console.log(idade);
-    console.log(cidade);
-  } else if (false) {
-    //OU
-    var _nome = _usuario.nome,
-        _idade = _usuario.idade,
-        _cidade = _usuario.endereco.cidade;
-    console.log(_nome);
-    console.log(_idade);
-    console.log(_cidade);
-  }
-
-  mostraNome(_usuario);
-  mostraIdade(_usuario);
-}
-/* === REST/SPREAD === */
-
-
-if (false) {
-  //REST
-  if (true) {
-    var _usuario2 = {
-      nome: "Diego",
-      idade: 23,
-      empresa: "Rocketseat"
-    };
-
-    var _nome2 = _usuario2.nome,
-        resto = _objectWithoutProperties(_usuario2, ["nome"]);
-
-    console.log(_nome2);
-    console.log(resto);
-    var _arr2 = [1, 2, 3, 4];
-
-    var _a = _arr2[0],
-        b = _arr2[1],
-        c = _arr2.slice(2);
-
-    console.log(_a);
-    console.log(b);
-    console.log(c);
-
-    var _soma = function _soma(a, b) {
-      return a + b;
-    };
-
-    console.log(_soma(1, 3)); //OU
-
-    var _soma2 = function _soma2() {
-      for (var _len = arguments.length, params = new Array(_len), _key = 0; _key < _len; _key++) {
-        params[_key] = arguments[_key];
-      }
-
-      return params.reduce(function (total, next) {
-        return total + next;
-      });
-    };
-
-    console.log(_soma2(1, 3, 4)); //OU
-
-    var soma03 = function soma03(a, b) {
-      for (var _len2 = arguments.length, params = new Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-        params[_key2 - 2] = arguments[_key2];
-      }
-
-      return params;
-    };
-
-    console.log(soma03(1, 3, 4));
-  } //SPREAD
-
-
-  if (true) {
-    var arr1 = [1, 2, 3];
-    var arr2 = [4, 5, 6];
-    var arr3 = [].concat(arr1, arr2);
-    console.log(arr3);
-    var usuario1 = {
-      nome: "Diego",
-      idade: 23,
-      empresa: "Rocketseat"
-    };
-
-    var usuario2 = _objectSpread({}, usuario1, {
-      nome: "Gabriel"
-    });
-
-    console.log(usuario2);
-  }
-}
-/* === TEMPLATE LITERALS === */
-
-
-if (false) {
-  //Incluir variáveis dentro de strings
-  var _nome3 = "Diego";
-  var _idade2 = 23;
-  console.log("Meu nome é " + _nome3 + " e tenho " + _idade2 + " anos.");
-  console.log("Meu nome \xE9 ".concat(_nome3, " e tenho ").concat(_idade2, " anos."));
-}
-/* === OBJECT SHORT SYNTAX === */
-
-
-if (true) {
-  var _nome4 = "Diego";
-  var _idade3 = 23;
-  var _usuario3 = {
-    nome: _nome4,
-    idade: _idade3,
-    empresa: "Rocketseat"
-  };
-  console.log(_usuario3); //OU
-
-  var _usuario4 = {
-    nome: _nome4,
-    idade: _idade3,
-    empresa: "Rocketseat"
-  };
-  console.log(_usuario4);
-}
+/******/ });
